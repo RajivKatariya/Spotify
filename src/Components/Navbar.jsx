@@ -2,9 +2,6 @@ import React from 'react';
 import './Style.css';
 import {AiFillLeftCircle} from 'react-icons/ai';
 import {AiFillRightCircle} from 'react-icons/ai'
-import Music from './Music';
-import Footer from './Footer';
-
 
 const Navbar = () => {
   return (
@@ -21,12 +18,10 @@ const Navbar = () => {
               <li><a href="">Download</a></li>
             </ul>
             <ul className='auth'>
-              <li><a href="">Sign up</a></li>
+              <a href="">Sign up</a>
               <button className='login'>Log in</button>
             </ul>
       </div>
-      <Music/>
-      <Footer/>
     </div>
     </>
   )

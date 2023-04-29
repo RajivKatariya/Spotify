@@ -8,7 +8,7 @@ const FooterEnd = () => {
       <p>Sign up to get unlimited songs and podcasts with occasional ads.No credit card needed.</p>
     </div>
     <div class="login">
-      <a href="">Sign up free</a>
+    <button className='login'>Sign up free</button>
     </div>
   </div>
   )

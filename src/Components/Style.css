@@ -7,16 +7,15 @@
     display: flex;
 }
 .sidebar{
-    width: 15%;
-    flex-basis: 15%;
+    width: 250px;
     padding-top: 10px;
     background-color: rgb(7, 7, 7);
     padding: 20px;
+    height: 100%;
     position: fixed;
-    /* position: relative; */
-    /* height: 100%; */
+    top: 0px;
+    left: 0;
     z-index: 11111;
-    left:0px;
 }
 .sidebar img{
     width: 80%;
@@ -50,12 +49,13 @@
     flex: 70%;
 }
 .side-menu{
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .side-menu ul {
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr;
+    padding-left: 20px;
+    grid-template-columns: repeat(2,1fr);
 }
 .side-menu ul li {
     list-style: none;
@@ -64,8 +64,10 @@
 {
      color: #fff;
      text-decoration: none;
+     font-size: 10px;
 }
 .english{
+    margin-top: 10px;
     display: flex;
     justify-content: start;
     align-items: start;
@@ -86,11 +88,16 @@
     border-radius: 50px;
     padding: 5px;
 }
+.main-center{
+    width: 100%;
+}
 /* ----------------------------------- Navbar ---------------------------- */
 .all-content{
     flex-basis: 85%;
-    position: relative;
-    left: 15%;
+    position: sticky;
+    top: 0;
+    margin-left: 250px;
+    z-index: 1;
 }
 .upper{
     flex-basis: 100%;
@@ -100,8 +107,6 @@
     justify-content: space-between;
     height:max-content;
     padding: 10px;
-    position: sticky;
-    top: 0;
     z-index: 1111;
 }
 .upper ul {
@@ -137,7 +142,19 @@
     align-items: center;
     padding: 0px 20px;
 }
-
+.auth a{
+    color: #736c6c;
+    text-decoration: none;
+    font-size: larger;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0px 20px;
+}
+.auth a:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    color: #fff;
+}
 .login{
     border: none;
     border-radius: 20px;
@@ -147,6 +164,7 @@
     font-size: 15px;
     font-weight: 700;
     cursor: pointer;
+    transition: 0.1s ease;
 }
 .login:hover{
     transform: scale(1.1);
@@ -156,8 +174,8 @@
 /*-------------------------------------Music-------------------------- */
 
 .content{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    margin-left: 250px;
     background-color: #211f1f;
 }
 .content ul{
@@ -235,7 +253,7 @@
 /* ----------------------------------------Footer-------------------------------------- */
 .footer{
     background-color: #211f1f;
-    /* margin-left: 250px; */
+    margin-left: 250px;
     padding: 40px 20px;
 }
 .f-content{
@@ -299,6 +317,7 @@ hr{
 }
 .iFoPDp {
     flex: 0 0 auto;
+    padding-bottom: 100px;
     display: flex;
     flex-flow: row nowrap;
     -webkit-box-align: end;
@@ -311,6 +330,8 @@ hr{
     justify-content: space-between;
     align-items: center;
     bottom: 0px;
+    position: fixed;
+    bottom: 0;
     z-index: 1111111;
     background-image: -webkit-gradient(linear,left top,right top,from(#af2896),to(#509bf5));
     padding: 11px 24px 7px 15px;
@@ -323,6 +344,7 @@ hr{
 .first-footer p{
     font-size: 18px;
     font-weight: 500;
+    margin: 0;
 }
 
 

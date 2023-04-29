@@ -37,9 +37,13 @@ const Sidebar = () => {
     <a href="" className='laguage'><FiGlobe/>English</a>
     </div>
     </div>
+    <div className='main-center'>
     <Navbar/>
+    <Music/>
+    <Footer/>
     </div>
-    {/* <FooterEnd/> */}
+    </div>
+    <FooterEnd/>
     </>
   )
 }

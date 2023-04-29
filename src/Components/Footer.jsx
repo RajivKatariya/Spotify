@@ -1,6 +1,5 @@
 import React from 'react';
 import './Style.css';
-import FooterEnd from './FooterEnd';
 
 const Footer = () => {
   return (
@@ -55,7 +54,6 @@ const Footer = () => {
         </div>
       </div>
     </div>
-    <FooterEnd/>
     </>
   )
 }
